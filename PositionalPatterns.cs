@@ -26,9 +26,7 @@ namespace CSharp8
         public float Longitude { get; set; }
         public float Altitude { get; set; }
 
-        // C# 8.0
-        public GpsLocation(float lat, float lng, float alt) => (Latitude, Longitude, Altitude) = (lat, lng, alt);
-
+        // C# <8.0
         //public GpsLocation(float lat, float lng, float alt)
         //{
         //    this.Latitude = lat;
@@ -36,6 +34,18 @@ namespace CSharp8
         //    this.Altitude = alt;
         //}
 
+        // C# 8.0
+        public GpsLocation(float lat, float lng, float alt) => (Latitude, Longitude, Altitude) = (lat, lng, alt);
+
+        // C# <8.0
+        //public void Deconstruct(out float lat, out float lng, out float alt)
+        //{
+        //    lat = Latitude;
+        //    lng = Longitude;
+        //    alt = Altitude;
+        //}
+          
+        // C# 8.0
         public void Deconstruct(out float lat, out float lng, out float alt) => (lat, lng, alt) = (Latitude, Longitude, Altitude);
         
 
