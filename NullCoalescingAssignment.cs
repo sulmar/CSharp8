@@ -11,6 +11,7 @@ namespace CSharp8
         {
             Repository repository = new Repository();
 
+            // < C# 7.0
             if (repository.Keys == null)
                 repository.Keys = new List<string>();
 

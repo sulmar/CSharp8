@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharp8.Nullable;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq.Expressions;
@@ -16,11 +17,12 @@ namespace CSharp8
         {
             Console.WriteLine("Hello World!");
 
+            NullableReferenceTypes.Test();
 
             PositionalPatterns.Test();
 
 
-            Ranges.Test();
+            RangesIndices.Test();
             SwitchExpressions.Test();
             NullCoalescingAssignment.Test();
         }

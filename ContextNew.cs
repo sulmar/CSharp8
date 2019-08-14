@@ -19,9 +19,11 @@ namespace CSharp8
             // before C# 8.0
             Point[] ps = { new Point (1, 4), new Point(3,-2), new Point(9, 5) }; // all Points
 
+
+          
             // Point[] ps2 = { new (1, 4), new Point(3, -2), new Point(9, 5) }; // all Points
 
-            List<int> numbers = new List<int>() { 98, 75 };
+            // List<int> numbers = new List<int>() { 98, 75 };
 
             // List<int> numbers2 = new() { 98, 75 };
 
@@ -30,13 +32,13 @@ namespace CSharp8
 
     public class Point
     {
-    public Point(int x, int y)
-    {
-        X = x;
-        Y = y;
-    }
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
 
-    public int X { get; set; }
+        public int X { get; set; }
         public int Y { get; set; }
     }
 }
