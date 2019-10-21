@@ -3,7 +3,9 @@
 - Domyślna implementacja interfejsu
 - Zakresy
 - Strumienie asynchroniczne
+- Przypisanie pustej wartości (Null-Coalescing Assignment)
 - Pattern matching
-- Switch expressions
+- Positional patterns
+- Wyrażenie wyboru (Switch expressions)
 - Statyczne funkcje lokalne
-
+- Modyfikator using dla IDisposable
